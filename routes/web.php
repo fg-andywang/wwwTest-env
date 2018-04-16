@@ -13,6 +13,6 @@
 use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
-    DB::select("select time() from dual");
+    var_dump(DB::select("select time() from dual"));
     return view('welcome');
 });
