@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
+    DB::select("select time() from dual");
     return view('welcome');
 });
