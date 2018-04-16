@@ -10,9 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use Illuminate\Support\Facades\DB;
 
-Route::get('/', function () {
-    var_dump(DB::select("select 1 from dual"));
-    return view('welcome');
-});
+
+Route::get('/', 'test@index');
